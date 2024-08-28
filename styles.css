@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+p,
+a,
+label,
+input {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-left: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .logo p {
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+header .logo p:last-child {
+  font-size: 1em;
+  text-align: right;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+}
+
+main .hero a {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  text-decoration: none;
+  background-color: rgba(106, 68, 28, 0.7);
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+main .why-daikan,
+main .i-love-ramen {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main .why-daikan h1,
+main .i-love-ramen h1 {
+  margin: 20px 0;
+}
+
+.form {
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.form form label {
+  color: white;
+}
+
+.form .form-logo {
+  font-size: 96px;
+}
+
+footer {
+  text-align: right;
+  padding: 50px;
+}
+
+@media (min-width: 768px) {
+  html {
+    background-color: aliceblue;
+  }
+
+  .form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .form .form-logo {
+    margin-right: 20px;
+  }
+}
